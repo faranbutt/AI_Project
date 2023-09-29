@@ -8,10 +8,9 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Get Code
-              run: actions/checkout@v4
+              uses: actions/checkout@v4
             - name: list all
               working-directory: ./frontend 
               run: ls 
             - name: Run frontend
               run: npm run dev
-              
