@@ -12,5 +12,9 @@ jobs:
             - name: list all
               working-directory: ./frontend 
               run: ls 
+            - name: Install Dependencies
+              working-directory: ./frontend
+              run: npm install
             - name: Run frontend
+              working-directory: ./frontend
               run: npm run dev
